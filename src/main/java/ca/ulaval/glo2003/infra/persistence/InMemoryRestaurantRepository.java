@@ -2,7 +2,11 @@ package ca.ulaval.glo2003.infra.persistence;
 
 import ca.ulaval.glo2003.entities.Restaurant;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Optional;
 
 public class InMemoryRestaurantRepository implements RestaurantRepository {
     private final Map<String, Restaurant> database;
